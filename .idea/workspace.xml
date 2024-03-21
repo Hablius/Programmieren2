@@ -4,28 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1fc270c-4a2d-48ed-a9ee-99dd072c3161" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/calculator/Calculator.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/com/example/programmieren/hello-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/eigenerRechner/eigenerRechner.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/calculator/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/calculator/CalculatorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/calculator/CalculatorModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/calculator/CalculatorView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/eigenerRechner/Model.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/eigenerRechner/ModelController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/eigenerRechner/Rechner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/eigenerRechner/View.java" afterDir="false" />
+    <list default="true" id="c1fc270c-4a2d-48ed-a9ee-99dd072c3161" name="Changes" comment="Rechner fast fertig gestellt fehlen nur noch einige Eventhandler und calculate Methode vervollständigen">
+      <change afterPath="$PROJECT_DIR$/resources/PetShop/PetShop.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/calculator/calculator.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/PetShop/PetController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/PetShop/PetMVC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/PetShop/PetModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/PetShop/PetView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/calculator/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/calculator/MVC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/calculator/Model.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/calculator/View.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/calculator/handlers/BtnCalculateHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/calculator/handlers/BtnClearHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/calculator/handlers/BtnNumberHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/calculator/handlers/BtnOperatorHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/calculator/Calculator.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/eigenerRechner/eigenerRechner.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/eigenerRechner/eigenerRechner.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/Calculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/CalculatorController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/CalculatorModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/CalculatorView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/eigenerRechner/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/eigenerRechner/Model.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/eigenerRechner/ModelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/eigenerRechner/ModelController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/eigenerRechner/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/eigenerRechner/View.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,12 +45,15 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SET_USER_NAME_GLOBALLY" value="false" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2d5RAuXFrRbQ9nqfvfdUONI9dO6" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -69,6 +75,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.35924616&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.import&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -85,18 +92,11 @@
       <recent name="C:\Users\Joel\IdeaProjects\Programmieren\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="calculator.handlers" />
       <recent name="" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Rechner">
-    <configuration name="Calculator" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="calculator.Calculator" />
-      <module name="Programmieren" />
-      <option name="VM_PARAMETERS" value="--module-path &quot;C:\Users\Joel\Documents\javafx-sdk-17.0.8\lib&quot; --add-modules javafx.controls,javafx.fxml" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="HelloApplication" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.demo.HelloApplication" />
       <module name="demo" />
@@ -104,6 +104,28 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MVC" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="calculator.MVC" />
+      <module name="Programmieren" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;C:\Users\Joel\Documents\javafx-sdk-17.0.8\lib&quot; --add-modules javafx.controls,javafx.fxml" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PetMVC" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PetShop.PetMVC" />
+      <module name="Programmieren" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;C:\Users\Joel\Documents\javafx-sdk-17.0.8\lib&quot; --add-modules javafx.controls,javafx.fxml" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="PetShop.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -126,8 +148,9 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.PetMVC" />
       <item itemvalue="Application.Rechner" />
-      <item itemvalue="Application.Calculator" />
+      <item itemvalue="Application.MVC" />
       <item itemvalue="Application.HelloApplication" />
     </list>
   </component>
@@ -146,11 +169,62 @@
       <workItem from="1709555831849" duration="685000" />
       <workItem from="1709645855072" duration="305000" />
       <workItem from="1709646720925" duration="612000" />
-      <workItem from="1709721246738" duration="3353000" />
+      <workItem from="1709721246738" duration="4123000" />
+      <workItem from="1709813638924" duration="167000" />
+      <workItem from="1709909760588" duration="7130000" />
+      <workItem from="1710153768236" duration="997000" />
+      <workItem from="1710240585986" duration="5619000" />
+      <workItem from="1710246288667" duration="1014000" />
+      <workItem from="1710328871987" duration="2163000" />
+      <workItem from="1710338323930" duration="803000" />
+      <workItem from="1710405201837" duration="229000" />
+      <workItem from="1710411888711" duration="1391000" />
+      <workItem from="1710424188650" duration="3139000" />
+      <workItem from="1710762273608" duration="146000" />
+      <workItem from="1710836833063" duration="1888000" />
+      <workItem from="1710943618621" duration="16297000" />
+      <workItem from="1711009488325" duration="666000" />
+      <workItem from="1711022654852" duration="174000" />
     </task>
+    <task id="LOCAL-00001" summary="ich habe das View erstellt">
+      <option name="closed" value="true" />
+      <created>1709727029594</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1709727029594</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ich habe das View erstellt" />
+    <MESSAGE value="Rechner fast fertig gestellt fehlen nur noch einige Eventhandler und calculate Methode vervollständigen" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rechner fast fertig gestellt fehlen nur noch einige Eventhandler und calculate Methode vervollständigen" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

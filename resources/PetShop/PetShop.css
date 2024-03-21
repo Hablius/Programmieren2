@@ -1,0 +1,14 @@
+#ID {
+    -fx-border-inserts: 10px;
+    -fx-border-width: 50;
+    -fx-background-color: #37e5cf;
+}
+#controllArea{
+    -fx-background-color: rgba(16, 14, 129, 0.33);
+    -fx-text-fill: #ffffff;
+
+}
+#DataDisplay{
+    -fx-background-color: #0b7968;
+
+}
