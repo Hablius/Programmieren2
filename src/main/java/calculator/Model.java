@@ -1,68 +1,50 @@
 package calculator;
 
 public class Model {
-
-    private String operator;
-    private String aValue;
-    private String bValue;
-
-    public Model() {
-
-    }
-
-    private static int add(int a, int b) {
-        return a + b;
-    }
-
-    private static int subtract(int a, int b) {
-        return a - b;
-    }
-
-    private static int multiply(int a, int b) {
-        return a * b;
-    }
-
-    private static int divide(int a, int b) {
-        return a / b;
-    }
-
-    private static int clear() {
-        return 0;
-    }
-
-    private static int equals(int a, int b) {
-        return a;
-    }
-
-    private static int numbers(int a, int b) {
-        return a;
-    }
-
-    private static int calculate(int a, int b, String operator) {
-        return switch(operator) {
-            case "+" -> add(a, b);
-            case "-" -> subtract(a, b);
-            case "*" -> multiply(a, b);
-            case "/" -> divide(a, b);
-            default -> 0;
-        };
-    }
+    private String operator = "";
+    private String aValue = "";
+    private String bValue = "";
 
     public void addValue(int btnValue) {
-        if (this.operator == null || this.operator.isEmpty()) {
-            this.aValue = this.aValue + btnValue;
+        if (operator.isEmpty()) {
+            aValue += Integer.toString(btnValue);
         } else {
-            this.bValue = this.bValue + btnValue;
+            bValue += Integer.toString(btnValue);
         }
     }
 
-    public int calculate(){
-        int a = Integer.parseInt(this.aValue);
-        int b = Integer.parseInt(this.bValue);
-        return calculate(a, b, this.operator);
+    public int calculate() {
+        int a = Integer.parseInt(aValue);
+        int b = Integer.parseInt(bValue);
+        int result = switch (operator) {
+            case "+" -> a + b;
+            case "-" -> a - b;
+            case "*" -> a * b;
+            case "/" -> a / b;
+            default -> 0;
+        };
+        resetAfterOperation(result);
+        return result;
     }
-    public void updateOperator(String operator){
+
+    public void clear() {
+        aValue = "";
+        bValue = "";
+        operator = "";
+    }
+
+    public void updateOperator(String operator) {
         this.operator = operator;
     }
-}
 
+    private void resetAfterOperation(int result) {
+        aValue = Integer.toString(result);
+        bValue = "";
+        operator = "";
+    }
+
+    // Neue Methoden zum Überprüfen, ob Werte gesetzt sind
+    public boolean isReadyForCalculation() {
+        return !aValue.isEmpty() && !bValue.isEmpty();
+    }
+}

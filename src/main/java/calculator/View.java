@@ -12,60 +12,46 @@ public class View {
     protected Stage stage;
     protected Model model;
 
-    protected Button btnsNumber[] = new Button[10];
+    protected Button[] btnsNumber = new Button[10];
     protected GridPane calculatorGrid = new GridPane();
     protected TextField txtCalc = new TextField();
     protected VBox operatorButtons = new VBox();
+    protected Button btnPlus = new Button("+");
+    protected Button btnMinus = new Button("-");
+    protected Button btnTimes = new Button("*");
+    protected Button btnDivide = new Button("/");
+    protected Button btnClear = new Button("C");
+    protected Button btnEquals = new Button("=");
 
     public View(Stage primaryStage, Model model) {
         this.stage = primaryStage;
         this.model = model;
-
         BorderPane root = new BorderPane();
+        txtCalc.setEditable(false);
+        txtCalc.getStyleClass().add("text-field");
         root.setTop(txtCalc);
 
-
-        Button btnPlus = new Button("+");
-        Button btnMinus = new Button("-");
-        Button btnTimes = new Button("*");
-        Button btnDivide = new Button("/");
-
+        for (int i = 0; i < 10; i++) {
+            btnsNumber[i] = new Button(String.valueOf(i));
+            btnsNumber[i].getStyleClass().add("number-button");
+            int row = (i == 0) ? 3 : (i - 1) / 3;
+            int col = (i == 0) ? 1 : (i - 1) % 3;
+            calculatorGrid.add(btnsNumber[i], col, row);
+        }
 
         operatorButtons.getChildren().addAll(btnPlus, btnMinus, btnTimes, btnDivide);
+        operatorButtons.getStyleClass().add("operator-buttons");
         root.setRight(operatorButtons);
 
-        btnsNumber[0] = new Button("0");
-        btnsNumber[1] = new Button("1");
-        btnsNumber[2] = new Button("2");
-        btnsNumber[3] = new Button("3");
-        btnsNumber[4] = new Button("4");
-        btnsNumber[5] = new Button("5");
-        btnsNumber[6] = new Button("6");
-        btnsNumber[7] = new Button("7");
-        btnsNumber[8] = new Button("8");
-        btnsNumber[9] = new Button("9");
-        Button btnClear = new Button("C");
-        Button btnEquals = new Button("=");
-        calculatorGrid.add(btnsNumber[1], 0, 0);
-        calculatorGrid.add(btnsNumber[2], 1, 0);
-        calculatorGrid.add(btnsNumber[3], 2, 0);
-        calculatorGrid.add(btnsNumber[4], 0, 1);
-        calculatorGrid.add(btnsNumber[5], 1, 1);
-        calculatorGrid.add(btnsNumber[6], 2, 1);
-        calculatorGrid.add(btnsNumber[7], 0, 2);
-        calculatorGrid.add(btnsNumber[8], 1, 2);
-        calculatorGrid.add(btnsNumber[9], 2, 2);
         calculatorGrid.add(btnClear, 0, 3);
-        calculatorGrid.add(btnsNumber[0], 1, 3);
         calculatorGrid.add(btnEquals, 2, 3);
         root.setCenter(calculatorGrid);
-        root.setTop(txtCalc);
 
         Scene scene = new Scene(root);
-        stage.setTitle("Calculator");
         scene.getStylesheets().add(getClass().getResource("calculator.css").toExternalForm());
+        stage.setTitle("Calculator");
         stage.setScene(scene);
-
+        stage.show();
     }
 
     public void start() {

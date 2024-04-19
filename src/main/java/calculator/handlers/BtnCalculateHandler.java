@@ -6,7 +6,6 @@ import javafx.event.EventHandler;
 import javafx.scene.control.TextField;
 
 public class BtnCalculateHandler implements EventHandler<ActionEvent> {
-
     private TextField textField;
     private Model model;
 

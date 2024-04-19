@@ -6,19 +6,19 @@ import javafx.event.EventHandler;
 import javafx.scene.control.TextField;
 
 public class BtnOperatorHandler implements EventHandler<ActionEvent> {
-
     private TextField textField;
     private Model model;
-    private int btnValue;
+    private String operator;
 
-    public BtnOperatorHandler(TextField textField, Model model, int btnValue) {
+    public BtnOperatorHandler(TextField textField, Model model, String operator) {
         this.textField = textField;
         this.model = model;
-        this.btnValue = btnValue;
+        this.operator = operator;
     }
 
     @Override
     public void handle(ActionEvent event) {
-
+        this.textField.appendText(" " + operator + " ");
+        this.model.updateOperator(operator);
     }
 }
