@@ -1,14 +1,20 @@
-#ID {
-    -fx-border-inserts: 10px;
-    -fx-border-width: 50;
-    -fx-background-color: #37e5cf;
+#dataEntry {
+    -fx-border-insets: 5px;
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-background-color: moccasin;
 }
-#controllArea{
-    -fx-background-color: rgba(16, 14, 129, 0.33);
-    -fx-text-fill: #ffffff;
 
+#controlArea {
+    -fx-border-insets: 5px;
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-background-color: aquamarine;
 }
-#DataDisplay{
-    -fx-background-color: #0b7968;
 
+#dataDisplay {
+    -fx-border-insets: 5px;
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-background-color: skyblue;
 }
