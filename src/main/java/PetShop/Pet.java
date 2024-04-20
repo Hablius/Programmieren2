@@ -4,17 +4,11 @@ public class Pet {
     public enum Species {CAT, DOG, HORSE};
     public enum Gender {MALE, FEMALE};
 
-    private static int highestID = -1;
-
+    private static int highestID = 0;
     private final int ID;
     private Species species;
     private Gender gender;
     private String name;
-
-    // Class method to get next available ID
-    private static int getNextID() {
-        return ++highestID;
-    }
 
     public Pet(Species species, Gender gender, String name) {
         this.ID = getNextID();
@@ -23,7 +17,13 @@ public class Pet {
         this.name = name;
     }
 
-    // --- Getters and Setters ---
+    private static int getNextID() {
+        return highestID++;
+    }
+
+    public int getID() {
+        return ID;
+    }
 
     public Species getSpecies() {
         return species;
@@ -47,9 +47,5 @@ public class Pet {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public int getID() {
-        return ID;
     }
 }

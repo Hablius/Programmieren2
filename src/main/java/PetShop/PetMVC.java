@@ -4,19 +4,16 @@ import javafx.application.Application;
 import javafx.stage.Stage;
 
 public class PetMVC extends Application {
-    private PetView view;
-    private PetModel model;
-    private PetController controller;
 
     public static void main(String[] args) {
-        launch();
+        launch(args);
     }
 
     @Override
-    public void start(Stage stage) throws Exception {
-        model = new PetModel();
-        view = new PetView(stage, model);
-        controller = new PetController(model, view);
-        view.start();
+    public void start(Stage primaryStage) {
+        PetModel model = new PetModel();
+        PetView view = new PetView(primaryStage, model);
+        PetController controller = new PetController(model, view);
+        view.setController(controller);
     }
 }
