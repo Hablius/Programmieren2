@@ -20,8 +20,8 @@ public class PetView {
     Label lblDataGender = new Label();
     Button btnSave = new Button("Save");
     Button btnDelete = new Button("Delete");
-    Button btnNext = new Button("Next");
-    Button btnPrevious = new Button("Previous");
+    Button btnNext = new Button(">");
+    Button btnPrevious = new Button("<");
 
     public PetView(Stage stage, PetModel model) {
         this.stage = stage;
@@ -73,8 +73,8 @@ public class PetView {
         GridPane pane = new GridPane();
         pane.add(btnSave, 0, 0);
         pane.add(btnDelete, 1, 0);
-        pane.add(btnNext, 2, 0);
-        pane.add(btnPrevious, 3, 0);
+        pane.add(btnNext, 3, 0);
+        pane.add(btnPrevious, 2, 0);
         return pane;
     }
 
