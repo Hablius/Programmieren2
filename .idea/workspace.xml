@@ -4,31 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1fc270c-4a2d-48ed-a9ee-99dd072c3161" name="Changes" comment="Rechner fast fertig gestellt fehlen nur noch einige Eventhandler und calculate Methode vervollständigen">
-      <change afterPath="$PROJECT_DIR$/resources/PetShop/PetShop.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/calculator/calculator.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/PetShop/PetController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/PetShop/PetMVC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/PetShop/PetModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/PetShop/PetView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/calculator/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/calculator/MVC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/calculator/Model.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/calculator/View.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/calculator/handlers/BtnCalculateHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/calculator/handlers/BtnClearHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/calculator/handlers/BtnNumberHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/calculator/handlers/BtnOperatorHandler.java" afterDir="false" />
+    <list default="true" id="c1fc270c-4a2d-48ed-a9ee-99dd072c3161" name="Changes" comment="Petshop view erstellt und ein button zusätzlich hinzugefügt&#10;die die Pets werden gespeichert und man durch die Bibliothek blättern">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/OneTimePad/OneTimePad.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OneTimePad/CipherController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OneTimePad/CipherMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OneTimePad/CipherModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/OneTimePad/CipherView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/calculator/Calculator.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/eigenerRechner/eigenerRechner.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/eigenerRechner/eigenerRechner.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/Calculator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/CalculatorController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/CalculatorModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/calculator/CalculatorView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/eigenerRechner/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/eigenerRechner/Model.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/eigenerRechner/ModelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/eigenerRechner/ModelController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/eigenerRechner/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/eigenerRechner/View.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,14 +23,19 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
+        <option value="FxmlFile" />
         <option value="Class" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="SET_USER_NAME_GLOBALLY" value="false" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -60,18 +50,29 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Application.CipherMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MVC.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.OneTimePadApp.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PetMVC.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Rechner.executor&quot;: &quot;Run&quot;,
+    &quot;Application.cipherApp.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.calculator in Programmieren.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Joel/IdeaProjects/Programmieren/resources/eigenerRechner&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Joel/Documents/javafx-sdk-17.0.8/lib/javafx.web.jar&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.35924616&quot;,
@@ -96,14 +97,14 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Rechner">
-    <configuration name="HelloApplication" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.demo.HelloApplication" />
-      <module name="demo" />
+  <component name="RunManager" selected="Application.CipherMain">
+    <configuration name="CipherMain" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="OneTimePad.CipherMain" />
+      <module name="Programmieren" />
       <option name="VM_PARAMETERS" value="--module-path &quot;C:\Users\Joel\Documents\javafx-sdk-17.0.8\lib&quot; --add-modules javafx.controls,javafx.fxml" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.demo.*" />
+          <option name="PATTERN" value="OneTimePad.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -133,26 +134,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Rechner" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="eigenerRechner.Rechner" />
-      <module name="Programmieren" />
-      <option name="VM_PARAMETERS" value="--module-path &quot;C:\Users\Joel\Documents\javafx-sdk-17.0.8\lib&quot; --add-modules javafx.controls,javafx.fxml" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="eigenerRechner.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
+      <item itemvalue="Application.CipherMain" />
       <item itemvalue="Application.PetMVC" />
-      <item itemvalue="Application.Rechner" />
       <item itemvalue="Application.MVC" />
-      <item itemvalue="Application.HelloApplication" />
     </list>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.10-corretto-17.0.10-4caba194b151-5cd809f4" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -185,6 +178,37 @@
       <workItem from="1710943618621" duration="16297000" />
       <workItem from="1711009488325" duration="666000" />
       <workItem from="1711022654852" duration="174000" />
+      <workItem from="1711023267532" duration="765000" />
+      <workItem from="1711110983866" duration="324000" />
+      <workItem from="1711112537824" duration="3280000" />
+      <workItem from="1711119294788" duration="943000" />
+      <workItem from="1711143835093" duration="295000" />
+      <workItem from="1711144139664" duration="71000" />
+      <workItem from="1711145985234" duration="2255000" />
+      <workItem from="1711357381135" duration="2349000" />
+      <workItem from="1711706850559" duration="89000" />
+      <workItem from="1711706969789" duration="2865000" />
+      <workItem from="1711875881276" duration="203000" />
+      <workItem from="1711968543084" duration="1877000" />
+      <workItem from="1712034256985" duration="463000" />
+      <workItem from="1712049455222" duration="776000" />
+      <workItem from="1712145963762" duration="2852000" />
+      <workItem from="1712322356801" duration="226000" />
+      <workItem from="1712327685183" duration="607000" />
+      <workItem from="1712332351717" duration="516000" />
+      <workItem from="1712660130607" duration="1307000" />
+      <workItem from="1712665179316" duration="1688000" />
+      <workItem from="1712670079766" duration="1233000" />
+      <workItem from="1712840209211" duration="169000" />
+      <workItem from="1713164652796" duration="1658000" />
+      <workItem from="1713339340116" duration="3199000" />
+      <workItem from="1713350155562" duration="1578000" />
+      <workItem from="1713445929386" duration="356000" />
+      <workItem from="1713519168772" duration="304000" />
+      <workItem from="1713524673710" duration="8554000" />
+      <workItem from="1713607220677" duration="4291000" />
+      <workItem from="1713861448123" duration="1141000" />
+      <workItem from="1713947373267" duration="713000" />
     </task>
     <task id="LOCAL-00001" summary="ich habe das View erstellt">
       <option name="closed" value="true" />
@@ -194,7 +218,47 @@
       <option name="project" value="LOCAL" />
       <updated>1709727029594</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Rechner fast fertig gestellt fehlen nur noch einige Eventhandler und calculate Methode vervollständigen">
+      <option name="closed" value="true" />
+      <created>1711023393067</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1711023393067</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Rechner fast fertig gestellt fehlen nur noch einige Eventhandler und calculate Methode vervollständigen&#10;Rechner fertig gestellt">
+      <option name="closed" value="true" />
+      <created>1713540504839</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1713540504839</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Petshop view erstellt und ein button zusätzlich hinzugefügt">
+      <option name="closed" value="true" />
+      <created>1713540711299</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1713540711299</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Petshop view erstellt und ein button zusätzlich hinzugefügt&#10;die die Pets werden gespeichert und man durch die Bibliothek blättern">
+      <option name="closed" value="true" />
+      <created>1713627382823</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1713627382823</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Petshop view erstellt und ein button zusätzlich hinzugefügt&#10;die die Pets werden gespeichert und man durch die Bibliothek blättern">
+      <option name="closed" value="true" />
+      <created>1713861896828</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1713861896828</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,7 +278,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ich habe das View erstellt" />
     <MESSAGE value="Rechner fast fertig gestellt fehlen nur noch einige Eventhandler und calculate Methode vervollständigen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rechner fast fertig gestellt fehlen nur noch einige Eventhandler und calculate Methode vervollständigen" />
+    <MESSAGE value="Rechner fast fertig gestellt fehlen nur noch einige Eventhandler und calculate Methode vervollständigen&#10;Rechner fertig gestellt" />
+    <MESSAGE value="Petshop view erstellt und ein button zusätzlich hinzugefügt" />
+    <MESSAGE value="Petshop view erstellt und ein button zusätzlich hinzugefügt&#10;die die Pets werden gespeichert und man durch die Bibliothek blättern" />
+    <option name="LAST_COMMIT_MESSAGE" value="Petshop view erstellt und ein button zusätzlich hinzugefügt&#10;die die Pets werden gespeichert und man durch die Bibliothek blättern" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
