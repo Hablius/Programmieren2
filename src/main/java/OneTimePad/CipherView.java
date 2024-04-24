@@ -1,62 +1,59 @@
 package OneTimePad;
 
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextArea;
+import javafx.scene.control.*;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 public class CipherView {
-    private TextArea inputArea = new TextArea();
-    private TextArea outputArea = new TextArea();
+    private TextArea inputArea = new TextArea();  // Eingabe für Nachricht
+    private TextArea outputArea = new TextArea();  // Ausgabe
     private Button encryptButton = new Button("Encrypt");
     private Button decryptButton = new Button("Decrypt");
     private Button fileButton = new Button("Load Pad File");
-    private Label statusLabel = new Label();
+    private Label statusLabel = new Label();  // Statusanzeige
     private Stage stage;
 
     public CipherView(Stage stage) {
         this.stage = stage;
-        VBox root = new VBox(10);
+        VBox root = new VBox(10);  // Vertikales Layout
         root.getChildren().addAll(inputArea, encryptButton, decryptButton, fileButton, statusLabel, outputArea);
 
-
-        Scene scene = new Scene(root, 700, 500);
-        scene.getStylesheets().add(getClass().getResource("OneTimePad.css").toExternalForm());
+        Scene scene = new Scene(root, 700, 500);  // Größe des GUI
+        scene.getStylesheets().add(getClass().getResource("OneTimePad.css").toExternalForm());  // Stylesheet laden
         stage.setTitle("One-Time-Pad Encryption App");
-        stage.setScene(scene);
+        stage.setScene(scene);  // Szene zuweisen
     }
 
     public void show() {
-        stage.show();
+        stage.show();  // GUI anzeigen
     }
 
     public Button getEncryptButton() {
-        return encryptButton;
+        return encryptButton;  // Verschlüsselungsschaltfläche
     }
 
     public Button getDecryptButton() {
-        return decryptButton;
+        return decryptButton;  // Entschlüsselungsschaltfläche
     }
 
     public Button getFileButton() {
-        return fileButton;
+        return fileButton;  // Schaltfläche zum Laden einer Datei
     }
 
     public String getInputText() {
-        return inputArea.getText();
+        return inputArea.getText();  // Eingabetext erhalten
     }
 
     public void setOutputText(String text) {
-        outputArea.setText(text);
+        outputArea.setText(text);  // Ausgabe festlegen
     }
 
     public void setStatus(String text) {
-        statusLabel.setText(text);
+        statusLabel.setText(text);  // Statusanzeige festlegen
     }
 
     public Stage getStage() {
-        return stage;
+        return stage;  // Aktuelle Bühne
     }
 }
