@@ -1,0 +1,4 @@
+DOG;MALE;Rex
+CAT;FEMALE;Mittens
+BIRD;MALE;Tweety
+DOG;MALE;Wufo
