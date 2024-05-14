@@ -23,7 +23,10 @@ public class TestView extends Application {
         stage.setScene(scene);
         stage.show();
 
-        // Hier könnte der TestController instanziiert und gestartet werden
+        // Hier wird der TestController instanziiert und gestartet werden
+        DataStrructures model = new DataStrructures();
+        TestController controller = new TestController(model, this);
+        controller.runTests();
 
     }
 
