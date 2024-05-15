@@ -1,5 +1,6 @@
-package DataTest;
+package ListTesting;
 
+import ListTesting.ListTestingModel;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.GridPane;

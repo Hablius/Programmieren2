@@ -1,4 +1,4 @@
-package DataTest;
+package ListTesting;
 
 /**
  * This class represents data to be managed in a data structure. To allow

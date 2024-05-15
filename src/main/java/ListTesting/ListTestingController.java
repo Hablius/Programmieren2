@@ -1,4 +1,4 @@
-package DataTest;
+package ListTesting;
 
 import java.text.DecimalFormat;
 
