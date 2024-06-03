@@ -1,0 +1,15 @@
+.valid {
+    -fx-text-fill: green;
+}
+
+.invalid {
+    -fx-text-fill: red;
+}
+
+.success {
+    -fx-text-fill: green;
+}
+
+.error {
+    -fx-text-fill: red;
+}
